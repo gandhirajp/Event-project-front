@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function ParticipateList() {
   const [users, setUsers] = useState([])
 
-  useEffect(() => {
+  useEffect(() => { 
     fetchMovies()
   }, [])
 
@@ -16,7 +16,7 @@ function ParticipateList() {
       let userData = await axios.get("https://event-project2.herokuapp.com/userdata")
       setUsers(userData.data)
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   }
 
