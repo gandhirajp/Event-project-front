@@ -72,7 +72,7 @@ function UserDashboard() {
                                                     </div>
                                                 </div>
                                             })
-                                        }
+                                        } 
 
                                     </div>
                                 </div>
