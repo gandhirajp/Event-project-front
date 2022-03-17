@@ -30,6 +30,9 @@ function UserDashboard() {
             console.log(error)
         }
     }
+    const handleLogout=()=>{
+        localStorage.removeItem("my_token");
+    }
 
     return (
         <>
@@ -43,7 +46,7 @@ function UserDashboard() {
                             <Link className="nav-link collapsed " to="/" data-toggle="collapse" data-target="#collapseTwo"
                                 aria-expanded="true" aria-controls="collapseTwo">
                                 <i className="fas fa-fw fa-sign-out"></i>
-                                <span >Logout</span>
+                                <span onClick={handleLogout}>Logout</span>
                             </Link>
                         </div> 
 
