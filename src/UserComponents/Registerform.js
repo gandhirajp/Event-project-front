@@ -54,9 +54,9 @@ const Registerform = () => {
                   <input type="email" name='confirmemail' id="validationCustom02" className="form-control" onChange={formik.handleChange} value={formik.values.confirmemail} placeholder="Confirm Email" required />
 
                 </div>
-               
+                
                 <div className="col-md-6">
-                  <label for="validationCustom03" className="form-label">Phome number</label>
+                  <label for="validationCustom03" className="form-label">Phone number</label>
                   <input type="number" name='number' id="validationCustom03" className="form-control" onChange={formik.handleChange} value={formik.values.number} placeholder="Phone Number" required />
 
                 </div>
