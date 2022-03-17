@@ -92,40 +92,7 @@ function AdminDashboard() {
                                                             <h2 className="text-danger "> {event.eventname}</h2>
                                                             <hr/>
                                                             <h5 className='fs-6 fw-bold' >Eventdate : {event.date} : 12.00pm</h5>
-                                                            <div className="row">
-
-<section id="gallery">
-    <div className="container mt-4 ">
-        <div className="row">
-            {
-                eventList.map((event) => {
-                    return <div className="col-lg-4 col-md-6  mb-4">
-                     
-                        <div className="card  text-center" style={{ color: "black" }} id="cardhover" >
-                            <img src={`${event.imgUrl}`} className="card-img-top imagee " alt="img" />
-                            <div className="card-body fw-bold " >
-                               
-                                <h2 className="text-danger "> {event.eventname}</h2>
-                                <hr/>
-                                <h5 className='fs-6 fw-bold' >Eventdate : {event.date} : 12.00pm</h5>
-                                <hr/>
-                                <h5 className='text-primary fs-6 fw-bold'>Event type : online</h5>                                                   
-                                <Link to={"/registerform"} >                           
-                                    <button className='btn btn-primary mt-3 w-50' >Register</button>
-                                </Link>
-                                                                                         
-                            </div>
-                        </div>
-                    </div>
-                })
-            } 
-
-        </div>
-    </div>
-</section>
-
-</div>
-
+                                                            <hr/>
                                                             <Link to={`/edit-event/${event._id}`}><button className='btn btn-primary mr-3'>Edit</button></Link>
                                                             <button onClick={() => handleDelete(event._id)} className='btn btn-danger'>Delete</button>
                                                         </div>
