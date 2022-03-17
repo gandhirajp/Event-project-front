@@ -23,7 +23,7 @@ function ParticipateList() {
   return (
     <>
       <nav className="bg-dark navbar-dark d-flex align-item-center justify-content-between">
-        <Link to={"/admindashboard"} classNameName='btn btn-primary' >Go Back</Link>
+        <Link to={"/admindashboard"} className='btn btn-primary' >Go Back</Link>
       </nav>
 
       <section id="gallery">
@@ -42,7 +42,7 @@ function ParticipateList() {
 
                   </tr>
                 </thead>
-                <tbody classNameName='fw-bold color'>
+                <tbody className='fw-bold color'>
                   {
                     users.map((user, index) => {      // index is just uniqe value seperateed,only for map method this place use or not use no problem
                       return <tr key={index + 1} >

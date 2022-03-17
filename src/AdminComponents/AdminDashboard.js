@@ -37,12 +37,12 @@ function AdminDashboard() {
                 {/* SideBar */}
                 <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-                    <a className="sidebar-brand d-flex align-items-center justify-content-center">
+                    <Link to="/admindashboard" className="sidebar-brand d-flex align-items-center justify-content-center">
                         <div className="sidebar-brand-icon rotate-n-15">
                             <i className="fas fa-ticket"></i>
                         </div>
                         <div className="sidebar-brand-text mx-3"> Admin Page</div>
-                    </a>
+                    </Link>
 
                     <hr className="sidebar-divider my-0" />
 
@@ -96,8 +96,8 @@ function AdminDashboard() {
                                                             
                                                         </ul>
                                                         <div className="card-body">
-                                                            <Link to={`/edit-event/${event._id}`}><button classNameName='btn btn-primary mr-3'>Edit</button></Link>
-                                                            <button onClick={() => handleDelete(event._id)} classNameName='btn btn-danger'>Delete</button>
+                                                            <Link to={`/edit-event/${event._id}`}><button className='btn btn-primary mr-3'>Edit</button></Link>
+                                                            <button onClick={() => handleDelete(event._id)} className='btn btn-danger'>Delete</button>
                                                         </div>
                                                     </div>
                                                 </div>

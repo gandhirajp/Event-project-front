@@ -29,13 +29,14 @@
     background-size: cover;
     color: aliceblue;
    
-
 }
 .tableform{
     background-color: rgba(0,0,0,0.5);
 }
 #cardhover:hover{
-   
    cursor: pointer;
    box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+}
+.color{
+    color: #000;
 }

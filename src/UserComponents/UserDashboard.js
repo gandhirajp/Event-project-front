@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Link } from 'react-router-dom'
 function UserDashboard() {
 
-    const [theaterList, setTheaterList] = useState([])
+    const [eventList, setEventList] = useState([])
     useEffect(async () => {
         try {
             let dashboard = await axios.get("https://event-project2.herokuapp.com/userdashboard", {
@@ -24,8 +24,8 @@ function UserDashboard() {
 
     let fetchTheaters = async () => {
         try {
-            let allTheaters = await axios.get("https://event-project2.herokuapp.com/event")
-            setTheaterList(allTheaters.data)
+            let allEvent = await axios.get("https://event-project2.herokuapp.com/event")
+            setEventList(allEvent.data)
         } catch (error) {
             console.log(error)
         }
@@ -45,7 +45,7 @@ function UserDashboard() {
                                 <i className="fas fa-fw fa-sign-out"></i>
                                 <span >Logout</span>
                             </Link>
-                        </div>
+                        </div> 
 
 
                         <div className="row">
@@ -54,18 +54,18 @@ function UserDashboard() {
                                 <div className="container mt-4 ">
                                     <div className="row">
                                         {
-                                            theaterList.map((theater) => {
+                                            eventList.map((event) => {
                                                 return <div className="col-lg-4 col-md-6  mb-4">
                                                  
                                                     <div className="card  text-center" style={{ color: "black" }} id="cardhover" >
-                                                        <img src={`${theater.imgUrl}`} className="card-img-top w-100 h-100" alt="img" />
+                                                        <img src={`${event.imgUrl}`} className="card-img-top w-100 h-100" alt="img" />
                                                         <div className="card-body fw-bold " >
                                                            
-                                                            <h2 className="   text-danger "> {theater.eventname}</h2>
-                                                            <h5 classNameName='fs-6 fw-bold' >Eventdate : {theater.date} : 12.00pm</h5>
-                                                            <h5 classNameName='text-primary fs-6 fw-bold'>Event type : online</h5>                                                   
+                                                            <h2 className="text-danger "> {event.eventname}</h2>
+                                                            <h5 className='fs-6 fw-bold' >Eventdate : {event.date} : 12.00pm</h5>
+                                                            <h5 className='text-primary fs-6 fw-bold'>Event type : online</h5>                                                   
                                                             <Link to={"/registerform"} >                           
-                                                                <button classNameName='btn btn-primary  w-50 mt-3' >Register</button>
+                                                                <button className='btn btn-primary mt-3 w-50' >Register</button>
                                                             </Link>
                                                                                                                      
                                                         </div>

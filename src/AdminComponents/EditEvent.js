@@ -37,8 +37,8 @@ function EditEvent() {
 
     return (
         <>
-            <div classNameName='container mt-5'>
-                <h4 classNameName='mb-5'>Edit Event</h4>
+            <div className='container mt-5 color'>
+                <h4 className='mb-5'>Edit Event</h4>
                 <form onSubmit={formik.handleSubmit}>
 
                     <div className="form-outline mb-4">
