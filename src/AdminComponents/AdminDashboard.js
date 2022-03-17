@@ -85,9 +85,9 @@ function AdminDashboard() {
                                         {
                                             eventList.map((event) => {
                                                 return <div className="col-lg-4 col-md-6 mb-4">
-                                                    <div className="card fw-bold imagee">
+                                                    <div className="card fw-bold h-100 w-100">
                                                         <div className="card-body" style={{ textAlign: "center" }}>
-                                                            <img src={`${event.imgUrl}`} alt="" className="card-img-top "  />
+                                                            <img src={`${event.imgUrl}`} alt="img" className="card-img-top "  />
                                                            
                                                         </div>
                                                         <ul className="list-group list-group-flush">
