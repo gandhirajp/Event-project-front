@@ -58,7 +58,7 @@ function UserDashboard() {
                                                 return <div className="col-lg-4 col-md-6  mb-4">
                                                  
                                                     <div className="card  text-center" style={{ color: "black" }} id="cardhover" >
-                                                        <img src={`${event.imgUrl}`} className="card-img-top w-100 h-100 " alt="img" />
+                                                        <img src={`${event.imgUrl}`} className="card-img-top imagee " alt="img" />
                                                         <div className="card-body fw-bold " >
                                                            
                                                             <h2 className="text-danger "> {event.eventname}</h2>
