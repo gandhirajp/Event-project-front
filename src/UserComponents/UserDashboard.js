@@ -43,11 +43,11 @@ function UserDashboard() {
 
                         <div className="d-sm-flex justify-content-between mb-3 sticky-top" style={{ background: "black", padding: "20px" }}>
                             <h1 className="h3 mb-0" style={{ color: "white" }}>Coding Events</h1>
-                            <Link className="nav-link collapsed " to="/" data-toggle="collapse" data-target="#collapseTwo"
+                            <button className="nav-link collapsed " onClick={handleLogout}  data-toggle="collapse" data-target="#collapseTwo"
                                 aria-expanded="true" aria-controls="collapseTwo">
                                 <i className="fas fa-fw fa-sign-out"></i>
-                                <span onClick={handleLogout}>Logout</span>
-                            </Link>
+                                <span >Logout</span>
+                            </button>
                         </div> 
 
 
