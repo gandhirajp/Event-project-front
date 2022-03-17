@@ -1,5 +1,5 @@
 import './App.css';
-import "./booking.css";
+import "./event.css";
 import Register from './Register';
 import {
   BrowserRouter,
