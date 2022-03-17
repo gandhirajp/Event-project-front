@@ -87,7 +87,7 @@ function AdminDashboard() {
                                                 return <div className="col-lg-4 col-md-6 mb-4">
                                                     <div className="card fw-bold  w-100">
                                                         <div className="card-body" style={{ textAlign: "center" }}>
-                                                            <img src={`${event.imgUrl}`} alt="img"   />
+                                                            <img src={`${event.imgUrl}`} alt="img" className="card-img-top"  />
                                                            
                                                         </div>
                                                         <ul className="list-group list-group-flush">
