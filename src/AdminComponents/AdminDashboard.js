@@ -90,9 +90,9 @@ function AdminDashboard() {
                                                         <div className="card-body fw-bold ">
 
                                                             <h2 className="text-danger "> {event.eventname}</h2>
-                                                            <hr/>
+                                                            
                                                             <h5 className='fs-6 fw-bold' >Eventdate : {event.date} : 12.00pm</h5>
-                                                            <hr/>
+                                                           
                                                             <Link to={`/edit-event/${event._id}`}><button className='btn btn-primary mr-3'>Edit</button></Link>
                                                             <button onClick={() => handleDelete(event._id)} className='btn btn-danger'>Delete</button>
                                                         </div>
