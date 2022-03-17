@@ -33,7 +33,7 @@ function AddEvent() {
           <form onSubmit={formik.handleSubmit}>
 
             <div className="form-outline mb-4">
-              <label className="form-label" for="form6Example3">Add Event Details</label>
+              <label className="form-label" for="form6Example3">Image URL</label>
               <input type="text" name='imgUrl' id="form6Example3" className="form-control" onChange={formik.handleChange} value={formik.values.imgUrl} placeholder="img-url" required />
             </div>
 
