@@ -50,7 +50,7 @@ function AddEvent() {
               <input type="date" name="date" className="form-control" onChange={formik.handleChange} value={formik.values.date} required />
             </div>
 
-            <button type="submit" className="btn btn-primary btn-block mb-4">Add new theater</button>
+            <button type="submit" className="btn btn-primary btn-block mb-4">Add new Event</button>
           </form>
         </div>
         {/* Add event title */}
